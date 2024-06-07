@@ -1,13 +1,23 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'seaport';
+  constructor(private translate: TranslateService) {
+    // Add languages
+    translate.addLangs(['en', 'fr']);
+    // Set default language
+    translate.setDefaultLang('en');
+    // Use the default language initially
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
+  }
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
+  }
 }
