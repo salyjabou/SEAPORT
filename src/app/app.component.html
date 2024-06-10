@@ -1,21 +1,15 @@
-<nav>
-  <a href="#home" class="logo-link">
-    <img src="/assets/images/logo.png" alt="Logo" class="logo">
-  </a>
-  <div class="nav-links">
-    <a href="#home">Accueil</a>
-    <a href="#about">Nos réalisations</a>
-    <a href="#contact">Nous contact</a>
-  </div>
-  <button (click)="switchLanguage('en')">EN</button>
-  <button (click)="switchLanguage('fr')">FR</button>
-</nav>
-<!--<div id="home">-->
-<!--  <app-home></app-home>-->
-<!--</div>-->
-<!--<div id="realisation">-->
-<!--  <app-realisations></app-realisations>-->
-<!--</div>-->
-<!--<div id="contact">-->
-<!--  <app-contact></app-contact>-->
-<!--</div>-->
+<div>
+  <nav>
+    <a href="#home" class="logo-link">
+      <img src="assets/images/logo.png" alt="Logo" class="logo">
+    </a>
+    <div class="nav-links">
+        <a routerLink="/home">{{ 'HOME' | translate }}</a>
+        <a routerLink="/realisations">{{ 'REALISATIONS' | translate }}</a>
+        <a routerLink="/contact">{{ 'CONTACT' | translate }}</a>
+    </div>
+  </nav>
+  <button (click)="switchLanguage('en')">English</button>
+  <button (click)="switchLanguage('fr')">Français</button>
+</div>
+<router-outlet></router-outlet>

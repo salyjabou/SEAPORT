@@ -19,6 +19,14 @@ nav a {
   border-radius: 5px;
 }
 
+.nav-links a {
+  color: #000000; /* Black text color */
+  margin-left: 15px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 nav a:active {
   color: #216941;
   font-family: Roboto;
@@ -28,6 +36,7 @@ nav a:active {
 
 nav a.logo-link {
   margin-right: auto; /* Pushes other links to the right */
+  display: flex;
 }
 
 nav .logo {
