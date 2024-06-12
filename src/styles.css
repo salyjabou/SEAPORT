@@ -1,9 +1,11 @@
-body {
+/* styles.css */
+.container {
+  width: 100%;
+  margin: 0 auto;
   background-color: #F8FBF9;
-  margin: 0;
   font-family: Arial, sans-serif;
 }
 
-html, body {
-  height: 100%;
+h2 {
+  color: #2c3e50;
 }

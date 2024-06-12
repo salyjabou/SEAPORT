@@ -1,15 +1,26 @@
-<div>
-  <nav>
-    <a href="#home" class="logo-link">
-      <img src="assets/images/logo.png" alt="Logo" class="logo">
-    </a>
-    <div class="nav-links">
-        <a routerLink="/home">{{ 'HOME' | translate }}</a>
-        <a routerLink="/realisations">{{ 'REALISATIONS' | translate }}</a>
-        <a routerLink="/contact">{{ 'CONTACT' | translate }}</a>
-    </div>
-  </nav>
-  <button (click)="switchLanguage('en')">English</button>
-  <button (click)="switchLanguage('fr')">Français</button>
+<!--<div>-->
+<!--  <nav>-->
+<!--    <a href="#home" class="logo-link">-->
+<!--      <img src="assets/images/logo.png" alt="Logo" class="logo">-->
+<!--    </a>-->
+<!--    <div class="nav-links">-->
+<!--        <a routerLink="/home">{{ 'HOME' | translate }}</a>-->
+<!--        <a routerLink="/realisations">{{ 'REALISATIONS' | translate }}</a>-->
+<!--        <a routerLink="/contact">{{ 'CONTACT' | translate }}</a>-->
+<!--    </div>-->
+<!--  </nav>-->
+<!--  <button (click)="switchLanguage('en')">English</button>-->
+<!--  <button (click)="switchLanguage('fr')">Français</button>-->
+<!--</div>-->
+<!--<router-outlet></router-outlet>-->
+<div class="container">
+  <section id="home">
+    <app-home></app-home>
+  </section>
+  <section id="contact">
+    <app-contact></app-contact>
+  </section>
+  <section id="realisations">
+    <app-realisations></app-realisations>
+  </section>
 </div>
-<router-outlet></router-outlet>
