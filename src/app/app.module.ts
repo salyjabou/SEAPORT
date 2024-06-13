@@ -6,6 +6,7 @@ import {HomeComponent} from "./home/home.component";
 import {RealisationsComponent} from "./realisations/realisations.component";
 import {ContactComponent} from "./contact/contact.component";
 import {MenuComponent} from "./menu/menu.component";
+import {FooterComponent} from "./footer/footer.component";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {MenuComponent} from "./menu/menu.component";
     HomeComponent,
     RealisationsComponent,
     ContactComponent,
-    MenuComponent
+    MenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
