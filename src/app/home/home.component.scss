@@ -1,0 +1,44 @@
+.home {
+  &-image {
+    width: 660px;
+    height: 442px;
+    top: 152px;
+    left: 48px;
+    border-radius: 8px;
+  }
+
+  &-title {
+    font-family: Lora;
+    font-size: 46px;
+    font-weight: 700;
+  }
+
+  &-sizing {
+    max-width: 660px;
+    margin-left: 30px;
+  }
+
+  &subtitle {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    }
+
+  &-button {
+    width: 175px;
+    height: 51px;
+    gap: 10px;
+    color: #FFFFFF;
+    background-color: #216941;;
+  }
+}
+
+  .about-section {
+    height: 306px;
+    top: 632px;
+    padding: 180px 250px 180px 250px;
+    gap: 32px;
+    &-subtitle {
+      text-align: center;
+    }
+  }

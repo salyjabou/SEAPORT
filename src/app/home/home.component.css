@@ -1,6 +1,0 @@
-/* Ensure home component does not override the background */
-:host {
-  display: block;
-  width: 100%;
-  background-color: transparent;
-}
