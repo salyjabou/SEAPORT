@@ -15,14 +15,22 @@ label {
 }
 
 input, textarea {
-  width: 100%;
-  padding: 8px;
+  width: 659px;
+  padding: 16px;
+  gap: 10px;
   box-sizing: border-box;
+  border: 1px solid #EDEFF0
 }
 
 button {
-  align-self: flex-start;
+  width: 175px;
+  height: 51px;
+  gap: 10px;
+  color: #FFFFFF;
+  background-color: #216941;
+  margin-top: 20px;
 }
+
 
 :host {
   display: block;
