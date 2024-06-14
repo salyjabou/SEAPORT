@@ -1,6 +1,4 @@
-/* footer.component.css */
 footer {
-  //position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -10,7 +8,7 @@ footer {
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  //text-decoration: underline;
 }
 
 .seaport-footer {
@@ -31,4 +29,10 @@ footer {
   font-size: 26px;
   font-weight: 700;
   text-align: left;
+}
+
+.footer-subtitle {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
 }
