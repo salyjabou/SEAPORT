@@ -6,12 +6,25 @@ form {
 }
 
 div {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-label {
-  margin-bottom: 5px;
-  font-weight: bold;
+.contact {
+  &-title {
+     font-family: Lora;
+     font-size: 46px;
+     font-weight: 700;
+     color: #112136;
+   }
+   &-subtitle {
+     font-family: Roboto;
+     font-size: 18px;
+     font-weight: 400;
+     color: #112136;
+   }
+    &-spacing {
+        margin-right: 50px;
+    }
 }
 
 input, textarea {
