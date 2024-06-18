@@ -14,11 +14,12 @@ nav {
   height: 90px;
 }
 
-.logo img {
+.logo {
   width: 87px;
   height: 42px;
   margin-left: 20px;
   align-items: start;
+  background-image: url('../../assets/logo.png');
 }
 
 ul {
@@ -39,6 +40,8 @@ a {
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
+  font-size: 16px;
+  font-weight: 900;
 }
 
 a:hover {
@@ -47,7 +50,7 @@ a:hover {
   font-size: 16px;
   font-weight: 900;}
 
-a:active {
+.nav-link.active {
   color: #216941;
   font-family: Roboto;
   font-size: 16px;

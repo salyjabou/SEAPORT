@@ -1,10 +1,19 @@
 <nav class="d-flex justify-content-between">
   <div class="logo">
-    <img src="assets/logo.png" alt="Logo">
+<!--    <img src="../../assets/logo.png" alt="Logo">-->
   </div>
   <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#realisations">Realisations</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a
+        class="nav-link" [ngClass]="{ active: activeLink === 'home' }" (click)="setActiveLink('home')" href="#home">Accueil</a></li>
+    <li><a
+        class="nav-link"
+        [ngClass]="{ active: activeLink === 'realisations' }"
+        (click)="setActiveLink('realisations')"
+        href="#realisations"
+    >Nos réalisations</a
+    ></li>
+    <li><a class="nav-link" [ngClass]="{ active: activeLink === 'contact' }" (click)="setActiveLink('contact')" href="#contact"
+    >Nous contacter</a
+    ></li>
   </ul>
 </nav>

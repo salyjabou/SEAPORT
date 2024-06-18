@@ -1,26 +1,33 @@
-<div class="d-flex flex-row justify-content-center">
-    <div class="contact-spacing">
-        <div class="contact-title">Contactez-Nous</div>
-        <div class="contact-subtitle">Get in touch with us here.</div>
+    <div class="background-image"></div>
+    <div class="d-flex flex-row justify-content-center">
+        <div class="contact-spacing">
+            <div class="contact-title">Contactez-nous</div>
+            <div class="contact-subtitle">Get in touch with us here.</div>
+        </div>
+        <div>
+            <form (ngSubmit)="onSubmit()" formGroup="contactForm">
+                <div>
+                    <input type="text" formControlName="nom" name="name" required placeholder="Nom">
+                </div>
+                <div>
+                   <input type="text" formControlName="prenom" name="prenom" required placeholder="Prénom">
+                </div>
+                <div>
+                    <input type="email" formControlName="email" name="email" required placeholder="Email">
+                </div>
+                <div>
+                    <select id="country" class="form-select" formControlName="country" >
+                        <option value="" disabled selected>Pays</option>
+                        <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" formControlName="objet" name="objet" required placeholder="Objet">
+                </div>
+                <div>
+                    <textarea formControlName="message" name="message" required placeholder="Décrivez votre projet" rows="4"></textarea>
+                </div>
+                <button type="submit" class="home-button">Envoyer la demande</button>
+            </form>
+        </div>
     </div>
-    <div>
-        <form>
-            <div>
-                <input type="text" id="name" name="name" required placeholder="Nom">
-            </div>
-            <div>
-               <input type="text" id="prenom" name="prenom" required placeholder="Prénom">
-            </div>
-            <div>
-                <input type="email" id="email" name="email" required placeholder="Email">
-            </div>
-            <div>
-                <input type="text" id="objet" name="email" required placeholder="Objet">
-            </div>
-            <div>
-                <textarea id="message" name="message" required placeholder="Décrivez votre projet" rows="4"></textarea>
-            </div>
-            <button type="submit" class="home-button">Envoyer la demande</button>
-        </form>
-    </div>
-</div>
