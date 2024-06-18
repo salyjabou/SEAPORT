@@ -3,20 +3,16 @@
 }
 
 .home-container {
-    position: relative;
-    width: 100%;
     background-image: url('../assets/home-image.png'); /* Assurez-vous que le chemin est correct */
     background-size: 622px 870px;
     background-position: 1175px -177px;;
     background-repeat: no-repeat;
 }
 
-//.contact-container {
-//    position: relative;
-//    width: 100%;
-//    background-image: url('../assets/contact-image.png'); /* Assurez-vous que le chemin est correct */
-//    background-size: 502px 702px;
-//    background-position: 48px -143px;;
-//    background-repeat: no-repeat;
-//
-//}
+.contact-container {
+    background-image: url('../assets/contact-image.png'); /* Assurez-vous que le chemin est correct */
+    background-size: 502px 702px;
+    background-position: 48px 35px;;
+    background-repeat: no-repeat;
+    margin-left: -80px;
+}
