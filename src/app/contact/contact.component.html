@@ -15,7 +15,7 @@
                 <div>
                     <input type="email" formControlName="email" name="email" required placeholder="Email">
                 </div>
-                <div>
+                <div class="select-size">
                     <select id="country" class="form-select d-flex w-100" formControlName="country" >
                         <option value="" disabled selected>Pays</option>
                         <option *ngFor="let country of countries" [value]="country">{{ country }}</option>

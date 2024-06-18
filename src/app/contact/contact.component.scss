@@ -10,6 +10,7 @@ div {
 }
 
 .contact {
+    margin-top: 30px;
   &-title {
      font-family: Lora;
      font-size: 46px;
@@ -27,12 +28,20 @@ div {
     }
 }
 
-input, textarea {
+input, select {
   width: 659px;
+  height: 51px;
   padding: 16px;
-  gap: 10px;
   box-sizing: border-box;
-  border: 1px solid #EDEFF0
+  border: 1px solid #EDEFF0;
+    border-radius: unset;
+}
+
+textarea {
+    width: 659px;
+    padding: 16px;
+    box-sizing: border-box;
+    border: 1px solid #EDEFF0
 }
 
 button {
@@ -41,5 +50,14 @@ button {
   gap: 10px;
   color: #FFFFFF;
   background-color: #216941;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1; /* Pour les navigateurs modernes */
+}
+
+.select-size {
+    width: 659px;
 }
