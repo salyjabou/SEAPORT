@@ -1,0 +1,26 @@
+.service{
+    &-title {
+         font-family: Lora;
+         font-size: 46px;
+         font-weight: 700;
+     }
+    &-subtitle {
+         font-family: Roboto;
+         font-size: 18px;
+         font-weight: 400;
+         color: #112136;
+     }
+
+    &-button {
+         width: 318px;
+         height: 51px;
+         gap: 10px;
+         color: white;
+         background-color: #216941;
+         text-align: center;
+         display: inline-block;
+         line-height: 51px; /* Vertically centers the text */
+         text-decoration: none;
+         margin-top: 500px;
+     }
+}

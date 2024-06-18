@@ -21,11 +21,11 @@
 
   }
 
-  &subtitle {
+  &-subtitle {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 400;
-      color: #112136;
+    color: #112136;
   }
 
   &-button {
@@ -37,8 +37,7 @@
     text-align: center;
     display: inline-block;
     line-height: 51px; /* Vertically centers the text */
-    transition: background-color 0.3s ease;
-      text-decoration: none;
+    text-decoration: none;
   }
 }
 
