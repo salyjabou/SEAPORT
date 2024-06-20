@@ -1,30 +1,31 @@
-.service{
+.service {
     &-title {
-         font-family: Lora;
-         font-size: 46px;
-         font-weight: 700;
-     }
+        font-family: Lora;
+        font-size: 46px;
+        font-weight: 700;
+    }
+
     &-subtitle {
-         font-family: Roboto;
-         font-size: 18px;
-         font-weight: 400;
-         color: #112136;
-         max-width: 886px;
-        text-align:center;
-     }
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        color: #112136;
+        max-width: 886px;
+        text-align: center;
+    }
 
     &-button {
-         width: 318px;
-         height: 51px;
-         gap: 10px;
-         color: white;
-         background-color: #216941;
-         text-align: center;
-         display: inline-block;
-         line-height: 51px; /* Vertically centers the text */
-         text-decoration: none;
-         margin-top: 20px;
-     }
+        width: 318px;
+        height: 51px;
+        gap: 10px;
+        color: white;
+        background-color: #216941;
+        text-align: center;
+        display: inline-block;
+        line-height: 51px; /* Vertically centers the text */
+        text-decoration: none;
+        margin-top: 20px;
+    }
 }
 
 .realisations-container {
@@ -81,14 +82,14 @@
 }
 
 .image-box .title {
-    margin: 10;
+    margin: 10px;
     font-size: 24px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Pour améliorer la lisibilité du texte sur l'image */
     transition: opacity 0.3s;
 }
 
 .image-box .link {
-    margin-top: 10px;
+    margin-top: 15px;
     color: white;
     text-decoration: underline;
     cursor: pointer;
@@ -108,4 +109,21 @@
 
 .image_grand {
     background-image: url('../../assets/projets_grands.png'); /* Chemin vers votre image de fond */
+}
+
+.image-box .image-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5); /* Filtre noir semi-transparent */
+     pointer-events: none; /* Permet de cliquer à travers la superposition */
+    }
+
+.description-title {
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
