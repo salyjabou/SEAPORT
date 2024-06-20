@@ -9,6 +9,8 @@
          font-size: 18px;
          font-weight: 400;
          color: #112136;
+         max-width: 886px;
+        text-align:center;
      }
 
     &-button {
@@ -21,6 +23,89 @@
          display: inline-block;
          line-height: 51px; /* Vertically centers the text */
          text-decoration: none;
-         margin-top: 500px;
+         margin-top: 20px;
      }
+}
+
+.realisations-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre les boîtes */
+    padding: 20px;
+
+}
+
+.image-box {
+    position: relative;
+    width: 432px;
+    height: 288px;
+    box-shadow: 2px 3px 13px 0px #11213666;
+    border-radius: 8px;
+    overflow: hidden; /* Pour que l'image reste à l'intérieur de la boîte */
+}
+
+.image-box .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour s'assurer que l'image couvre bien toute la boîte */
+}
+
+.image-box .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.image-box .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #112136; /* Fond semi-transparent bleu */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    color: white;
+    opacity: 0; /* Masquer la description par défaut */
+    transition: opacity 0.3s; /* Transition douce pour l'effet de survol */
+    padding: 30px;
+}
+
+.image-box .title {
+    margin: 10;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Pour améliorer la lisibilité du texte sur l'image */
+    transition: opacity 0.3s;
+}
+
+.image-box .link {
+    margin-top: 10px;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.image-box:hover .description {
+    opacity: 1; /* Afficher la description lors du survol */
+}
+
+.image_fluviaux {
+    background-image: url('../../assets/projets_fluviaux.png'); /* Chemin vers votre image de fond */
+}
+
+.image_maritimes {
+    background-image: url('../../assets/projet_maritimes.png'); /* Chemin vers votre image de fond */
+}
+
+.image_grand {
+    background-image: url('../../assets/projets_grands.png'); /* Chemin vers votre image de fond */
 }
