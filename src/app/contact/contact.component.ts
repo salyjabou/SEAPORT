@@ -43,13 +43,18 @@ export class ContactComponent implements OnInit {
     }
 
     ngOnInit(): void {
+
     }
 
-    onSubmit(): void {
+    onSubmit() {
         if (this.contactForm.valid) {
-            console.log(this.contactForm.value);
-            alert('Form submitted successfully!');
-            this.contactForm.reset();
+            const { nom,prenom,country, message } = this.contactForm.value;
+            const subject = encodeURIComponent('objet: ${objet}');
+            const body = encodeURIComponent(`Nom: ${nom}\n Prenom: ${prenom} \nCountry: ${country}\nMessage: ${message}`);
+            const mailtoLink = `mailto:jabou.saly@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = mailtoLink;
+        } else {
+            console.log('Form is invalid'); // Debugging
         }
     }
 }

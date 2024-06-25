@@ -7,6 +7,7 @@ import {RealisationsComponent} from "./realisations/realisations.component";
 import {ContactComponent} from "./contact/contact.component";
 import {MenuComponent} from "./menu/menu.component";
 import {FooterComponent} from "./footer/footer.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {FooterComponent} from "./footer/footer.component";
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

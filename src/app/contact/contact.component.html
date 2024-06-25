@@ -5,7 +5,7 @@
             <div class="contact-subtitle">Get in touch with us here.</div>
         </div>
         <div>
-            <form (ngSubmit)="onSubmit()" formGroup="contactForm">
+            <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
                 <div>
                     <input type="text" formControlName="nom" name="name" required placeholder="Nom">
                 </div>
@@ -27,7 +27,7 @@
                 <div>
                     <textarea formControlName="message" name="message" required placeholder="Décrivez votre projet" rows="4"></textarea>
                 </div>
-                <button type="submit" class="home-button">Envoyer la demande</button>
+                <button type="submit" class="home-button" [disabled]="contactForm.invalid">Envoyer la demande</button>
             </form>
         </div>
     </div>
