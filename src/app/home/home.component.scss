@@ -38,6 +38,7 @@
     display: inline-block;
     line-height: 51px; /* Vertically centers the text */
     text-decoration: none;
+      cursor: pointer;
   }
 }
 
@@ -50,3 +51,34 @@
       text-align: center;
     }
   }
+
+.color-section {
+    background-color: #F8FBF9;
+}
+
+.home-container {
+    background-image: url('../../assets/home-image.png'); /* Assurez-vous que le chemin est correct */
+    background-size: 622px 870px;
+    background-position: 1175px -177px;;
+    background-repeat: no-repeat;
+}
+
+.contact-container {
+    background-image: url('../../assets/contact-image.png'); /* Assurez-vous que le chemin est correct */
+    background-size: 502px 702px;
+    background-position: 48px 35px;;
+    background-repeat: no-repeat;
+    margin-left: -80px;
+}
+
+.service-container {
+    background-image: url('../../assets/service-image.png'); /* Assurez-vous que le chemin est correct */
+    background-size: 582px 818px;
+    background-position: 48px 35px;;
+    background-repeat: no-repeat;
+    margin-left: -80px;
+}
+
+.project-realised-container {
+    background-color: white;
+}
