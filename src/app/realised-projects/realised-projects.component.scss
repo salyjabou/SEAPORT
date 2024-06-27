@@ -18,16 +18,29 @@
     background-image: url('../../assets/projet_realisé.png'); /* Chemin vers votre image de fond */
 }
 
-.projet-image-box .title {
+.title {
+    padding: 20px;
     position: absolute;
-    //top: 50%;
-    //transform: translate(-50%, -50%);
     color: white;
     font-family: Rubik;
     font-size: 20px;
     font-weight: 600;
-    pointer-events: none;
-    text-align: left
+    text-align: left;
+}
+
+.subtitle {
+    //position: absolute;
+
+    color: white;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+
+    &-text {
+        font-family: Roboto;
+        font-weight: 600;
+    }
 }
 
 .projet-cursor {
@@ -71,6 +84,21 @@
     transform: rotate(90deg);
 }
 
+.image_2 {
+    background-image: url('../../assets/projet_realisé_2.png'); /* Chemin vers votre image de fond */
+}
 
+.image_3 {
+    background-image: url('../../assets/projet_realisé_3.png'); /* Chemin vers votre image de fond */
+}
+
+.image_geo {
+    background-image: url('../../assets/geo.png'); /* Chemin vers votre image de fond */
+}
+
+.geo {
+    width: 1344px;
+    height: 492px;
+}
 
 
